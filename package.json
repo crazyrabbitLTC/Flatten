@@ -1,6 +1,6 @@
 {
   "name": "codebaser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A tool to flatten codebases into single files with predefined templates",
   "author": "Dennison Bertram & Claude Anthorpic",
   "bin": {
