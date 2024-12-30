@@ -1,0 +1,27 @@
+{
+  "name": "codebaser",
+  "version": "1.0.0",
+  "description": "A tool to flatten codebases into single files with predefined templates",
+  "author": "Dennison Bertram & Claude Anthorpic",
+  "main": "src/index.js",
+  "bin": {
+    "codebaser": "src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "codebase",
+    "flatten",
+    "code-analysis",
+    "development-tools"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/codebaser.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
