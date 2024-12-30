@@ -34,6 +34,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.crawlDirectory = crawlDirectory;
 const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 const templates = {
@@ -99,10 +100,11 @@ function crawlDirectory(dir, config) {
                         try {
                             const fileContent = fs.readFileSync(filePath, 'utf-8');
                             output += fileContent;
-                            output += '\n';
+                            output += '\n\n';
                         }
                         catch (error) {
                             console.error(`Error reading ${filePath}: ${error.message}`);
+                            output += '\n';
                         }
                     }
                 }
@@ -158,4 +160,6 @@ function main() {
         process.exit(1);
     }
 }
-main();
+if (require.main === module) {
+    main();
+}

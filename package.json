@@ -4,7 +4,7 @@
   "description": "A tool to flatten codebases into single files with predefined templates",
   "author": "Dennison Bertram & Claude Anthorpic",
   "bin": {
-    "flatten": "src/index.js"
+    "codebaser": "src/index.js"
   },
   "files": [
     "dist"
