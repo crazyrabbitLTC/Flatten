@@ -3,12 +3,26 @@
   "version": "1.0.0",
   "description": "A tool to flatten codebases into single files with predefined templates",
   "author": "Dennison Bertram & Claude Anthorpic",
-  "main": "src/index.js",
   "bin": {
-    "codebaser": "src/index.js"
+    "flatten": "src/index.js"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.2",
+    "typescript": "^5.0.0",
+    "@types/jest": "^29.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
   },
   "keywords": [
     "codebase",
