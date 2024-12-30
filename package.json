@@ -4,12 +4,12 @@
   "description": "A tool to flatten codebases into single files with predefined templates",
   "author": "Dennison Bertram & Claude Anthorpic",
   "bin": {
-    "codebaser": "src/index.js"
+    "codebaser": "./dist/index.js"
   },
+  "main": "./dist/index.js",
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
